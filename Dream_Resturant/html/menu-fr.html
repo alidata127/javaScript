@@ -1,0 +1,549 @@
+<!--
+       Written By: Alireza Boroumandyar
+    First Written: 2021-11-19
+      Last Update: 2022-02-15
+      page for providing menu information
+-->
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Menu of Dream Restaurant" />
+    <meta name="keywords" content="Dream Restaurant, menu, Menu" />
+    <meta name="author" content="Alireza Boroumandyar" />
+    <!-- FAVICON -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/../css/font-awesome.css" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Foods Menu</title>
+
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header>
+        <!-- Items from schema.org for visibility -->
+        <div class="visually-hidden" itemscope itemtype="https://schema.org/Restaurant">
+            <span itemprop="name">DreamRestaurant</span>
+
+            <div itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                <span itemprop="ratingValue">4</span> stars -
+                based on <span itemprop="reviewCount">250</span> reviews
+            </div>
+
+            <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                <span itemprop="streetAddress">345 Saint-Laurent</span>
+                <span itemprop="addressLocality">Montreal</span>,
+                <span itemprop="addressRegion">QC</span> <span itemprop="postalCode">H4L 5P3</span>
+            </div>
+            <span itemprop="telephone">(438) 555-2368</span>
+            <a itemprop="url" href="http://www.DreamRestaurant.com">www.DreamRestaurant.com</a>
+
+            Hours:
+            <meta itemprop="openingHours" content="Mo-Fr 11:30-15:00">Mon-Fri 11:30am - 3:00pm
+            <meta itemprop="openingHours" content="Mo-Fr 18:00-23:00">Mon-Fri 6pm - 11:00pm
+            <meta itemprop="openingHours" content="Sa 18:00-23:00">Sat 6pm - 11:00pm
+
+            Categories:
+            <span itemprop="servesCuisine">
+                Middle Eastern
+            </span>,
+            <span itemprop="servesCuisine">
+                Mediterranean
+            </span>
+
+            Price Range: <span itemprop="priceRange">$$</span>
+            Takes Reservations: Yes
+        </div>
+        <div id="header_top" class="container-fluid">
+            <div class="row g-0">
+                <div class="col d-flex flex-nowrap">
+                    <a id="header_top__link" href="../index-fr.html">
+                        <h1 id="header_top__text" class="text-uppercase">dream restaurant</h1>
+                    </a>
+                    <a href="./menu.html" lang="fr" id="language_button"
+                        class="text-decoration-none ms-auto pe-3 my-auto flex-nowrap"><img id="language_icon"
+                            src="./../img/icons/british_flag.png"
+                            alt="Britain flag for changing the language of the page to English"><span
+                            class="d-none d-md-inline-block">English</span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- NAV START -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
+        <div class="container-fluid px-auto">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link  fs-4" aria-current="page" href="../index-fr.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active fs-4" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="reservations-fr.html">Réservations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="order-fr.html">Commandez</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="contactUs-fr.html">Contactez-nous</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-4" href="about_us_fr.html">A propos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- NAV END -->
+
+    <div class="container-fluid border border-primary">
+        <div class="row border border-secondary">
+            <div class="col-xl text-center fw-bold">Starter</div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/starterFingerFood.jpg" alt="starterFingerFood" title="starterFingerFood">
+            </div>
+            <div class="col-xl">
+                <h4>Finger food</h4>
+                <label class="fw-normal">Les bouchées sont de petites portions individuelles d'aliments qui sont
+                    consommées à l'improviste.
+                    Ils sont souvent servis lors d'événements sociaux. La bouchée idéale ne crée généralement pas de
+                    gâchis (c'est-à-dire pas de miettes, de gouttes ou de tout type de gâchis), mais ce critère est
+                    souvent négligé dans
+                    afin d'inclure des aliments comme les tacos.[1] L'une des origines des amuse-gueules est le canapé
+                    français.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/starterSpageti.jpg" alt="starterSpaghetti" title="starterSpaghetti">
+            </div>
+            <div class="col-xl">
+                <h4>Spaghetti</h4>
+                <label class="fw-normal">
+                    Spaghetti Starter est généralement servi comme entrée, ou primo, en Italie,
+                    avant d'être suivi d'un plat principal à base de viande ou de poisson - le secondo. Comme cela
+                    collection démontre, italien
+                    les recettes de pâtes varient beaucoup, avec différentes formes de pâtes et sauces trouvées dans
+                    chaque région.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/starterFriedCalamari.jpg" alt="Fried Calamari" title="Fried Calamari">
+            </div>
+            <div class="col-xl">
+                <h4>Squid Pieces</h4>
+                <label class="fw-normal">Ces tendres morceaux de calamars frits sont trempés dans du babeurre et
+                    puis enrobé de farine assaisonnée avant d'être frit à une couleur légèrement dorée.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/starterBaconWrappedShrimp.jpg" alt="Bacon wrapped shrimp"
+                    title="Bacon wrapped shrimp">
+            </div>
+            <div class="col-xl">
+                <h4>Shrimp</h4>
+                <label class="fw-normal">Crevettes parfaitement succulentes délicatement enveloppées
+                    dans notre bacon mi-cuit. Une entrée incontournable en attendant votre plat principal !
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid fw-normal border border-primary">
+        <div class="row border border-secondary">
+            <div class="col-xl text-center fw-bold">Main Dishes</div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodPutin.jpg" alt="Poutine" title="Poutine">
+            </div>
+            <div class="col-xl">
+                <h4>Poutine</h4>
+                <label class="fw-normal">
+                    La poutine est un repas savoureux composé de frites recouvertes de fromage en grains frais et d'un
+                    sauce épaisse et brune. Il est originaire de la province de Québec, mais est devenu un populaire
+                    nourriture partout au Canada. Pour certaines personnes,
+                    la poutine est la nourriture réconfortante par excellence. Le repas ressemble à un gros gâchis, mais
+                    il a du goût
+                    délicieux
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodMeat.jpg" alt="foodMeat" title="foodMeat">
+            </div>
+            <div class="col-xl">
+                <h4>Meat</h4>
+                <label class="fw-normal">
+                    Un plat de viande est un aliment préparé qui se compose entièrement ou
+                    en partie de viande. Les plats de viande sont considérés comme distincts des plats qui sont
+                    fruits de mer, poissons, insectes ou autres animaux. Plats à base de lait et d'œufs,
+                    bien qu'à base de produits d'origine animale, ils sont également considérés comme distincts des
+                    plats de viande.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodPasta.jpg" alt="Pasta" title="Pasta">
+            </div>
+            <div class="col-xl">
+                <h4>Pasta</h4>
+                <label class="fw-normal">
+                    Les pâtes sont un type d'aliment généralement fabriqué à partir d'une pâte sans levain de farine de
+                    blé mélangée à
+                    l'eau
+                    ou des œufs, et formés en feuilles ou autres formes, puis cuits par ébullition ou cuisson.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodSalomon.jpg" alt="Salmon" title="Salmon">
+            </div>
+            <div class="col-xl">
+                <h4>Salmon</h4>
+                <label class="fw-normal">
+                    Le saumon est un poisson de consommation courante classé comme
+                    un poisson gras riche en protéines et en acides gras oméga-3
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodVegiterian.jpg" alt="vegetarian" title="vegetarian">
+            </div>
+            <div class="col-xl">
+                <h4>Vegetarian</h4>
+                <label class="fw-normal">
+                    Un régime végétarien se concentre sur les plantes pour se nourrir. Il s'agit notamment des fruits,
+                    des légumes, séchés
+                    haricots et pois, céréales, graines et noix. Il n'y a pas un seul type de régime végétarien.
+                    Au lieu de cela, les habitudes alimentaires végétariennes
+                    entrent dans les groupes suivants : Le régime végétalien, qui exclut toutes les viandes et tous les
+                    produits d'origine animale.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodIndiaRice.jpg" alt="Indian Rice" title="Indian Rice">
+            </div>
+            <div class="col-xl">
+                <h4>Indian Rice</h4>
+                <label class="fw-normal">
+                    Indian Rice (<span lang="in"> भारतीय चावल </span>) est une variété de biryani indien qui est
+                    a cru
+                    avoir été savouré par les moghols
+                    Empereurs d'autrefois. Le plat est composé de riz aromatisé, de morceaux de viande épicée et
+                    rissolée
+                    (généralement de l'agneau), des oignons frits, des raisins secs et des fruits secs tels que des
+                    amandes, qui sont en couches
+                    un pot,
+                    puis cuits ensemble, donnant une spécialité très aromatique réputée digne d'un roi.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodIranGheime.jpg" alt="Iranian Gheimeh" title="Iranian Gheimeh">
+            </div>
+            <div class="col-xl">
+                <label class="fw-normal">
+                    <h4>Gheimeh</h4>
+                    Gheimeh (<span lang="fa"> قیمه </span>) est un ragoût iranien (khoresh) composé de dés
+                    viande de mouton,
+                    tomates, pois cassés, oignon
+                    et citron vert séché, garni de pommes de terre dorées croustillantes finement tranchées.
+                    Le ragoût est parfois garni d'aubergines frites et est généralement servi avec du riz blanc
+                    (polow).
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodJapanSushi.jpg" alt="Japanes Sushi" title="Japanes Sushi">
+            </div>
+            <div class="col-xl">
+                <h4>Sushi</h4>
+                <label class="fw-normal">
+                    sushi (<span lang="ja"> すし </span>) , un plat de riz de base de la cuisine japonaise, composé de
+                    cuit
+                    riz aromatisé au
+                    vinaigre et une variété de garnitures de légumes, d'œufs ou de fruits de mer crus et servis froids.
+                    ...
+                    Pour les maki-zushi, une feuille de nori
+                    (laver, une algue) se tartine de riz, puis de fruits de mer ou de légumes et de garnitures.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodGreenChiliEnchiladas.jpg" alt="Green chili enchiladas"
+                    title="Green chili enchiladas">
+            </div>
+            <div class="col-xl">
+                <h4>Enchiladas</h4>
+                <label class="fw-normal">
+                    Dans cet incroyable plat d'enchiladas au piment vert, les tortillas de maïs sont remplies de
+                    piments verts rôtis et fromage, puis arrosés de salsa verde de tomatilles rôties.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/foodButterChicken.jpg" alt="Butter chicken" title="Butter chicken">
+            </div>
+            <div class="col-xl">
+                <h4>Peculiar</h4>
+                <label class="fw-normal">
+                    C'est l'un de nos plats indiens les plus populaires dans notre restaurant ! Le plat est particulier
+                    la saveur provient d'un mélange spécifique d'épices qui a été affiné au fil du temps.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+    </div>
+    <div class="container.-fluid  border border-primary">
+        <div class="row border border-secondary">
+            <div class="col-xl text-center fw-bold">Drinks</div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/drinkJuice.jpg" alt="Juice" title="Juice">
+            </div>
+            <div class="col-xl">
+                <h4>Juice</h4>
+                <label class="fw-normal">Le jus est une boisson issue de l'extraction ou du pressage du
+                    liquide naturel
+                    contenus dans les fruits et légumes. ... Le jus est généralement consommé comme
+                    boisson ou utilisé comme ingrédient ou arôme dans des aliments ou d'autres boissons, comme pour
+                    smoothies.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/drinkWine.jpg" alt="Wine" title="Wine">
+            </div>
+            <div class="col-xl">
+                <h4>Red Wine</h4>
+                <label class="fw-normal">
+                    Qu'est-ce que le vin rouge ? Commençons par les bases, le vin rouge est une boisson alcoolisée faite
+                    par
+                    fermenter le jus des raisins à peau foncée. Le vin rouge se distingue du vin blanc par sa
+                    matériel de base
+                    et processus de fabrication. Le vin rouge est fait avec des peaux foncées plutôt que des peaux
+                    claires
+                    les raisins.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  border border-primary">
+        <div class="row border border-secondary">
+            <div class="col-xl text-center fw-bold">Dessert</div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/deserDonat.jpg" alt="doughnut" title="doughnut">
+            </div>
+            <div class="col-xl">
+                <h4>doughnut</h4>
+                <label class="fw-normal">Un beignet est un type de pâte frite levée. ... Une fois
+                    frits, les beignets peuvent être glacés avec un
+                    glaçage au sucre, tartiné de glaçage ou de chocolat, ou nappé de sucre en poudre,
+                    cannelle,
+                    arrose ou fruit. D'autres formes incluent des boules, des sphères aplaties, des torsions,
+                    et d'autres formes.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/deserMacaron.jpg" alt="Macaron" title="Macaron">
+            </div>
+            <div class="col-xl">
+                <h4>Sandwich</h4>
+                <label class="fw-normal">
+                    un biscuit sandwich léger, souvent de couleur vive, composé de deux arrondis
+                    disques fabriqués à partir d'un
+                    pâte de blancs d'œufs, de sucre et de farine d'amande entourant une garniture sucrée
+                    (comme de la ganache,
+                    crème au beurre, ou confiture) Notez que nous parlons ici
+                    du macaron parisien, deux biscuits aériens meringués aux amandes pressés autour d'un
+                    garniture crémeuse
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/deserRaspberry.jpg" alt="Raspberry" title="Raspberry">
+            </div>
+            <div class="col-xl">
+                <h4>Swirl</h4>
+                <label class="fw-normal">Un subtil tourbillon de framboises fraîches infuse ce
+                    ange fait maison
+                    gâteau alimentaire avec une légère saveur de fruits. Comme tous les gâteaux des anges, il n'a pas de
+                    matière grasse
+                    ou le cholestérol.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/deserFudgeBrowniesAndVanillaIceCream.jpg"
+                    alt="Fudge brownies and vanilla ice cream" title="Fudge brownies and vanilla ice cream">
+            </div>
+            <div class="col-xl">
+                <h4>Brownies</h4>
+                <label class="fw-normal">Notre dessert le plus populaire est nos brownies au fudge et
+                    glace à la vanille. Le contraste
+                    des brownies chauds fraîchement préparés et
+                    la glace froide à la vanille est le moyen idéal pour terminer la nuit à notre
+                    le restaurant.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+        <div class="row border border-secondary">
+            <div class="col-xl">
+                <img class="img-w-400" src="../img/menu/deserApplePie.jpg" alt="Apple pie" title="Apple pie">
+            </div>
+            <div class="col-xl">
+                <h4>Apple Pie</h4>
+                <label class="fw-normal">Un autre de nos desserts populaires est notre délicieux
+                    tarte aux pommes! Cette
+                    la tarte fraîche est à double croûte avec de la pâte au-dessus et au-dessous de notre pomme
+                    remplissage.
+                </label>
+            </div>
+            <div class="col-xl">
+                <input type="checkbox">
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER START -->
+    <footer class="container-fluid">
+        <div class="row g-0">
+            <div
+                class="col-12 col-xl-4 py-5 d-flex justify-content-center align-content-center align-content-xl-start flex-wrap">
+                <h2 id="contact__resto_name" class="w-100 text-center text-uppercase fs-3 fw-bold">dream restaurant</h2>
+                <p id="contact_address" class="w-100 text-center">
+                    345 Saint-Laurent
+                    <br />
+                    <br />
+                    Montréal
+                </p>
+                <p id="phone_number" class="w-100 text-center">&#40;311&#41; 555-2368</p>
+                <a href="#" class="fa fa-facebook-square" id="facebook" aria-hidden="true"></a>
+                <a href="#" class="fa fa-instagram" id="insta" aria-hidden="true"></a>
+            </div>
+            <div
+                class="col-12 col-xl-4 py-5 d-flex justify-content-center align-content-center align-content-xl-start flex-wrap">
+                <p id="opening_hours_title" class="w-100 text-center text-decoration-underline fs-3">Heures d'ouverture
+                </p>
+                <p class="opening_days w-100 text-center">Lundi au vendredi</p>
+                <p class="opening_hours w-100 text-center">11:30 - 15:00 et 18:00 - 23:00</p>
+                <br />
+                <p class="opening_days w-100 text-center">Samedi</p>
+                <p class="opening_hours w-100 text-center">18:00 - 23:00</p>
+            </div>
+            <div class="col-12 col-xl-4 d-flex justify-content-center py-5 px-3 p-md-5">
+                <iframe id="contact_map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5594.1183608053225!2d-73.57112736511228!3d45.488753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a63786baa8f%3A0x1abbc93d7fc7a98e!2sRestaurant%20Le%20Richmond!5e0!3m2!1sen!2sca!4v1637176100019!5m2!1sen!2sca"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <!-- JS -->
+    <script src="../js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>

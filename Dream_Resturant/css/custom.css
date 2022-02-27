@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* custom css for about Dream Resaturant html page*/
+/* Jack Lopes*/
+/*11 Feb, 2022*/
+
+body {
+  color:  #e6d8d7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#about-main {
+    width: 60%;
+}
+
+.resto {
+    width: 200px;
+}

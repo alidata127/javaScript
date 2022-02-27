@@ -1,0 +1,211 @@
+body {
+  color: $dark-white;
+  font-family: $font-Cambria;
+  background-color: $black;
+}
+
+#header_top {
+  border-bottom: $thick-red-border;
+}
+
+#header_top__link {
+  text-decoration: none;
+}
+
+#header_top__text {
+  display: inline-block;
+  padding: 20px 15px;
+  margin: 0;
+  font-size: 2.35em;
+  font-weight: 500;
+  color: $dark-white;
+}
+
+#language_button {
+  color: $dark-white;
+}
+
+#language_icon {
+  width: 40px;
+}
+
+/* MAIN NAVIGATION */
+/* #main_nav {
+  display: flex;
+  background-color: #191919;
+} */
+
+/* MAIN */
+
+/* WELCOME SECTION */
+#welcome_section__info {
+  padding: 45px;
+}
+
+#welcome_section__title {
+  font-size: calc(1.325rem + 1.2vw);
+}
+
+#welcome_section__title span {
+  white-space: nowrap;
+}
+
+.welcome_section__text {
+  font-size: calc(1.2rem + 0.8vw);
+}
+
+.cover_div {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient($rgba-black, $rgba-gray 20%),
+    linear-gradient($rgba-gray 80%, $rgba-black 100%);
+  z-index: 1;
+}
+
+/* MENU  and RESERVATIONSECTION */
+#menu_picture,
+#reservation_section__picture,
+#welcome_section__picture {
+  position: relative;
+}
+
+#reservation_section__info {
+  padding: 12% 10%;
+}
+
+/* FOOTER */
+footer {
+  border-top: $thick-red-border;
+}
+/* CONTACT SECTION */
+
+/* CONTACT INFO SECTION */
+
+/* OPENING HOURS SECTION */
+
+/* CONTACT_MAP_CONTAINER SECTION */
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+  /* FONTS */
+  .welcome_section__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  #contact_address,
+  #phone_number,
+  .opening_days,
+  .opening_hours {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* FONTS */
+  .menu_article__short_description,
+  .menu_article__pricetag,
+  .reservation_text {
+    font-size: 1.25rem;
+  }
+}
+
+/* ICONS */
+#facebook {
+  color: light-blue;
+  background-color: $black;
+  font-size: 35px;
+  margin: 20px 15px 20px auto;
+}
+
+#facebook:hover {
+  color: $dark-purple;
+}
+
+#insta {
+  margin: 20px auto 20px 15px;
+  background: radial-gradient(
+    circle at 30% 107%,
+    $yellow 0%,
+    $yellow 5%,
+    $light-red 45%,
+    $dark-purple 60%,
+    $royal-blue 90%
+  );
+
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 35px; /* change this to change the size*/
+}
+
+#insta:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    $royal-blue 0%,
+    $royal-blue 5%,
+    $dark-purple 45%,
+    $light-red 60%,
+    $yellow 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 35px; /* change this to change the size*/
+}
+
+#about-main {
+  width: 60%;
+}
+
+.resto {
+  width: 200px;
+}
+
+.buttonContact:hover {
+  transition-duration: 0.6s;
+  background-color: white;
+  color: black;
+}
+
+.food {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.quantity {
+  width: 3.5em;
+}
+
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding: 2px 4px;
+    font-size: 80%;
+    line-height: 1;
+  }
+  .food-sm {
+    width: 50%;
+    height: 20vh;
+    object-fit: cover;
+  }
+}
+
+.browsMenu1 {
+  width: 50px;
+}
+.back-img-contact {
+  background-image: url("../img/contact_order_images/Meat1.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}

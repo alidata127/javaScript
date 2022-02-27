@@ -1,0 +1,174 @@
+/* ORDERS
+   @import url("") */
+body {
+  color: #e6d8d7;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #000;
+}
+
+/* HEADER TOP */
+#header_top {
+  border-bottom: red 6px solid;
+}
+
+#header_top__link {
+  text-decoration: none;
+}
+
+#header_top__text {
+  display: inline-block;
+  padding: 20px 15px;
+  margin: 0;
+  font-size: 2.35em;
+  font-weight: 500;
+  color: #e6d8d7;
+}
+
+#language_button {
+  color: #e6d8d7;
+}
+
+#language_icon {
+  width: 40px;
+}
+
+/* MAIN NAVIGATION */
+/* #main_nav {
+  display: flex;
+  background-color: #191919;
+} */
+
+/* MAIN */
+
+/* WELCOME SECTION */
+#welcome_section__info {
+  padding: 45px;
+}
+
+#welcome_section__title {
+  font-size: calc(1.325rem + 1.2vw);
+}
+
+#welcome_section__title span {
+  white-space: nowrap;
+}
+
+.welcome_section__text {
+  font-size: calc(1.2rem + 0.8vw);
+  font-weight: 400;
+}
+
+#welcome_section__picture {
+  position: relative;
+}
+
+.cover_div {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 20%),
+    linear-gradient(rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 1) 100%);
+  z-index: 1;
+}
+
+/* MENU SECTION */
+#menu_picture {
+  position: relative;
+}
+
+/* RESERVATION SECTION */
+#reservation_section__picture {
+  position: relative;
+}
+
+#reservation_section__info {
+  padding: 12% 10%;
+}
+
+/* FOOTER */
+footer {
+  border-top: red 6px solid;
+}
+/* CONTACT SECTION */
+
+/* CONTACT INFO SECTION */
+
+/* OPENING HOURS SECTION */
+
+/* CONTACT_MAP_CONTAINER SECTION */
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 768px) {
+  /* FONTS */
+  .welcome_section__text {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  #contact_address,
+  #phone_number,
+  .opening_days,
+  .opening_hours {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* FONTS */
+  .menu_article__short_description,
+  .menu_article__pricetag,
+  .reservation_text {
+    font-size: 1.25rem;
+  }
+}
+
+/* ICONS */
+#facebook {
+  color: rgb(66, 66, 255);
+  background-color: #000;
+  font-size: 35px;
+  margin: 20px 15px 20px auto;
+}
+
+#facebook:hover {
+  color: rgb(139, 139, 255);
+}
+
+#insta {
+  margin: 20px auto 20px 15px;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 35px; /* change this to change the size*/
+}
+
+#insta:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #285aeb 0%,
+    #285aeb 5%,
+    #d6249f 45%,
+    #fd5949 60%,
+    #fdf497 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 35px; /* change this to change the size*/
+}

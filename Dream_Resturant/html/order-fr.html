@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<!--
+   Project : design a resturant web page using Bootstrap tool   
+   Author: Farzaneh Kazemi
+   Date 11-02-2022
+   Last updated : 14-02-2022
+   -->
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="keywords"
+      content="dream restaurant, restaurant de rêve, restaurant, cuisine, nourriture, meilleur restaurant, dîner en famille, déjeuner, dîner"
+    />
+    <meta name="author" content="Farzaneh Kazemi" />
+    <title>Dream Resturant | order online</title>
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"-->
+    <!-- using  a custom css -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <!-- FontAwesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <div id="header_top" class="container-fluid">
+        <div class="row g-0">
+          <div class="col d-flex flex-nowrap">
+            <a id="header_top__link" href="../index.html">
+              <h1 id="header_top__text" class="text-uppercase">
+                dream restaurant
+              </h1>
+            </a>
+            <a
+              href="order.html"
+              lang="en"
+              id="language_button"
+              class="text-decoration-none ms-auto pe-3 my-auto flex-nowrap"
+              ><img
+                id="language_icon"
+                src="../img/icons/british_flag.png"
+                alt="English flag for changing the language of the page to English"
+              /><span class="d-none d-md-inline-block">English</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+    <!-- NAV START -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-black">
+      <div class="container-fluid px-auto">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-4"
+                aria-current="page"
+                href="../index-fr.html"
+                >Accueil</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="menu-fr.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="reservations-fr.html"
+                >Réservations</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active fs-4" href="order-fr.html">Commandez</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="contactUs-fr.html"
+                >Contactez-nous</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4" href="about_us_fr.html">A propos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- NAV END -->
+    <!-- MAIN START -->
+    <hr />
+    <div class="container continaer-fluid">
+      <h1 class="text-white">N'attendez pas, commandez maintenant</h1>
+      <form class="" action="search.php" method="post">
+        <div class="row">
+          <div class="mr-auto p-2 col">
+            <label class="">Catégories:</label>
+            <input
+              type="text"
+              list="browsMenu"
+              name="browsMenu"
+              id="browser"
+              class="w-25"
+            />
+            <datalist id="browsMenu">
+              <option value="Toute"></option>
+              <option value="Apéritif"></option>
+              <option value="Plat principal"></option>
+              <option value="Salade"></option>
+              <option value="Boisson"></option>
+              <option value="Dessert"></option>
+            </datalist>
+          </div>
+          <div class="p-2 input-group col me-6">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Rechercher dans le menu"
+              name="searchMenu"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <hr />
+    <div class="container continaer-fluid text-white">
+      <form
+        class="needs-validation p-4"
+        action="send_order.php"
+        id="orderform"
+        method="post"
+      >
+        <section>
+          <h2>Desserts</h2>
+          <div class="row row-cols-1 row-cols-md-3 row-cols-xxl-5">
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/Dessert1.jpg"
+                alt="Dessert"
+                title="Dessert "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Mousse</h5>
+                <p class="card-text lh-sm">
+                  C'est une mousse de myrtille à faible teneur en glucides.
+                </p>
+                <p class="text-danger">$25.00</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity1">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity1"
+                    name="quantity1"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/deserDonat.jpg"
+                alt="Donat"
+                title="Donat"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Donat</h5>
+                <p class="card-text lh-sm">Lorem ipsum dolor sit amet.</p>
+                <p class="text-danger">$9.99</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity2">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity2"
+                    name="quantity2"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/Dessert4.jpg"
+                alt="Chocolate Cake"
+                title="Chocolate Cake"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gateau au chocolat</h5>
+                <p class="card-text lh-sm">Un gâteau au chocolat au lait</p>
+                <p class="text-danger">$9.99</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity3">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity3"
+                    name="quantity3"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <!--end card-->
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/Dessert3.jpg"
+                alt="Strawberry Cake"
+                title="Strawberry Cake"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Strawberry Cake</h5>
+                <p class="card-text lh-sm">Absolument délicieux</p>
+                <p class="text-danger">$9.99</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity4">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity4"
+                    name="quantity4"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <!--end card-->
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/deserFudgeBrowniesAndVanillaIceCream.jpg"
+                alt="Fudge Brownie"
+                title="Fudge Brownie"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fudge Brownie &amp; Ice Cream</h5>
+                <p class="card-text lh-sm">
+                  C'est l'un des desserts les plus célèbres de notre restaurant.
+                </p>
+                <p class="text-danger">$9.99</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity5">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity5"
+                    name="quantity5"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <!--end card-->
+          </div>
+          <!--end card group-->
+        </section>
+        <hr />
+        <section>
+          <h2>Main Dishes</h2>
+          <div class="row row-cols-1 row-cols-md-3 row-cols-xxl-5">
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/foodButterChicken.jpg"
+                alt="ButterChicken"
+                title="ButterChicken "
+              />
+              <div class="card-body">
+                <h5 class="card-title">ButterChicken</h5>
+                <p class="card-text lh-sm">
+                  Lorem ipsum dolor sit amet consectetu
+                </p>
+                <p class="text-danger">$30.00</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity6">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity6"
+                    name="quantity6"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/Meat1.jpg"
+                alt="Meat"
+                title="Meat "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Meat</h5>
+                <p class="card-text lh-sm">Lorem ipsum dolor sit</p>
+                <p class="text-danger">$15.99</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity7">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity7"
+                    name="quantity7"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/pasta1.jpg"
+                alt="Pasta"
+                title="pasta"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pasta</h5>
+                <p class="card-text lh-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
+                  ne
+                </p>
+                <p class="text-danger">$12.99</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity8">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity8"
+                    name="quantity8"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <!--end card-->
+            <div class="cards">
+              <img
+                class="card-img food food-sm img-thumbnail"
+                src="../img/contact_order_images/foodIranGheime.jpg"
+                alt="Iranian Gheime"
+                title="Iranian Gheime "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Gheime</h5>
+                <p class="card-text lh-sm">
+                  C'est l'un des plats iraniens les plus célèbres de notre
+                  restaurant.
+                </p>
+                <p class="text-danger">$19.99</p>
+                <div class="d-inline-flex align-items-center">
+                  <label class="form-label" for="quantity9">Quantité:</label>
+                  <input
+                    class="form-control form-control-sm quantity ms-2"
+                    type="number"
+                    id="quantity9"
+                    name="quantity9"
+                    min="0"
+                    max="10"
+                  />
+                </div>
+              </div>
+              <!--end body-->
+            </div>
+            <!--end card-->
+          </div>
+          <!--end card group-->
+        </section>
+        <hr />
+        <section>
+          <h2 class="text-center">bon de commande</h2>
+          <div class="row">
+            <div class="col-7">
+              <div class="form-group mb-3">
+                <label class="col-form-label fw-bold" for="fname"
+                  >Votre Nom:</label
+                >
+                <input
+                  class="form-control form-control-sm"
+                  type="text"
+                  id="fname"
+                  name="fullname"
+                  placeholder="Full Name *"
+                  maxlength="35"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label class="col-form-label fw-bold" for="email"
+                  >E-mail:</label
+                >
+                <input
+                  class="form-control form-control-sm"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email *"
+                  required
+                />
+              </div>
+              <div class="form-group mb-3">
+                <label class="col-form-label fw-bold" for="phone"
+                  >Téléphone:</label
+                >
+                <input
+                  class="form-control form-control-sm"
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="123-4567-8910"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <p>Vous souhaitez récupérer votre commande?</p>
+            <div class="col-7">
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="pickupbyMyself"
+                  id="pickupbyMyself"
+                />
+                <label class="form-check-label" for="pickupbyMyself">
+                  Oui
+                </label>
+              </div>
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="pickupbyMyself"
+                  id="todeliver"
+                  checked
+                />
+                <label class="form-check-label" for="pickupbyMyself">
+                  Non, je demande la livraison
+                </label>
+              </div>
+              <div class="form-group mb-3">
+                <label class="col-form-label fw-bold" for="comment"
+                  >Commentaire:</label
+                >
+                <textarea
+                  class="form-control form-control-sm"
+                  id="comment"
+                  name="comment"
+                  maxlength="200"
+                >
+                </textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="row gap-6">
+          <h6>Méthodes de payement:</h6>
+          <div class="form-check mb-2">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="paypal"
+              id="paypal"
+            />
+            <label class="form-check-label" for="paypal">
+              <img
+                src="../img/contact_order_images/paypal.png"
+                alt="paypal"
+                title="paypal"
+              />
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="creditcard"
+              id="creditcard"
+              checked
+            />
+            <label class="form-check-label" for="creditcard">
+              <img
+                src="../img/contact_order_images/visadebit.jpg"
+                alt="visa debit card"
+                title="visa debit card"
+              />
+            </label>
+          </div>
+        </section>
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <button
+              type="submit"
+              class="btn btn-dark border border-white border-2 buttonContact active btn-responsive"
+            >
+              Vérifier ma commande
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--end container-->
+    <!-- MAIN END -->
+    <!-- FOOTER START -->
+    <footer class="container-fluid">
+      <div class="row g-0">
+        <div
+          class="col-12 col-xl-4 py-5 d-flex justify-content-center align-content-center align-content-xl-start flex-wrap"
+        >
+          <h2
+            id="contact__resto_name"
+            class="w-100 text-center text-uppercase fs-3 fw-bold"
+          >
+            dream restaurant
+          </h2>
+          <p id="contact_address" class="w-100 text-center">
+            345 Saint-Laurent
+            <br />
+            <br />
+            Montréal
+          </p>
+          <p id="phone_number" class="w-100 text-center">
+            &#40;311&#41; 555-2368
+          </p>
+          <a
+            href="#"
+            class="fa fa-facebook-square"
+            id="facebook"
+            aria-hidden="true"
+          ></a>
+          <a href="#" class="fa fa-instagram" id="insta" aria-hidden="true"></a>
+        </div>
+        <div
+          class="col-12 col-xl-4 py-5 d-flex justify-content-center align-content-center align-content-xl-start flex-wrap"
+        >
+          <p
+            id="opening_hours_title"
+            class="w-100 text-center text-decoration-underline fs-3"
+          >
+            Heures d'ouverture
+          </p>
+          <p class="opening_days w-100 text-center">Lundi au vendredi</p>
+          <p class="opening_hours w-100 text-center">
+            11:30 - 15:00 et 18:00 - 23:00
+          </p>
+          <br />
+          <p class="opening_days w-100 text-center">Samedi</p>
+          <p class="opening_hours w-100 text-center">18:00 - 23:00</p>
+        </div>
+        <div
+          class="col-12 col-xl-4 d-flex justify-content-center py-5 px-3 p-md-5"
+        >
+          <iframe
+            id="contact_map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5594.1183608053225!2d-73.57112736511228!3d45.488753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91a63786baa8f%3A0x1abbc93d7fc7a98e!2sRestaurant%20Le%20Richmond!5e0!3m2!1sen!2sca!4v1637176100019!5m2!1sen!2sca"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="../js/bootstrap.bundle.js"></script>
+  </body>
+</html>

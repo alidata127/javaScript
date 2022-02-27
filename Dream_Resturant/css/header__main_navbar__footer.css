@@ -1,0 +1,93 @@
+/* You will need the properties set for the <body> here for every section -
+HEADER, NAVBAR & FOOTER */
+body {
+  color:  #e6d8d7;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #000;
+}
+
+/* HEADER */
+#header_top {
+  border-bottom: red 6px solid;
+}
+
+#header_top__link {
+  text-decoration: none;
+}
+
+#header_top__text {
+  display: inline-block;
+  padding: 20px 15px;
+  margin: 0;
+  font-size: 2.35em;
+  font-weight: 500;
+  color: #e6d8d7;
+}
+
+#language_icon {
+  width: 40px;
+}
+
+/* FOOTER */
+footer {
+  border-top: red 6px solid;
+}
+
+@media  only screen and (min-width: 768px) {
+
+  /* FONTS */
+  #contact_address,
+  #phone_number,
+  .opening_days,
+  .opening_hours {
+    font-size: 1.25rem;
+  }
+}
+
+/* ICONS */
+#facebook {
+  color: rgb(66, 66, 255);
+  background-color: #000;
+  font-size: 35px;
+  margin: 20px 15px 20px auto;
+}
+
+#facebook:hover {
+  color: rgb(139, 139, 255);
+}
+
+#insta {
+  margin: 20px auto 20px 15px;
+  background: radial-gradient(
+  circle at 30% 107%,
+  #fdf497 0%,
+  #fdf497 5%,
+  #fd5949 45%,
+  #d6249f 60%,
+  #285aeb 90%
+);
+
+  -webkit-background-clip: text;
+/* Also define standard property for compatibility */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 35px; /* change this to change the size*/
+}
+
+#insta:hover {
+  background: radial-gradient(
+    circle at 30% 107%,
+    #285aeb 0%,
+    #285aeb 5%,
+    #d6249f 45%,
+    #fd5949 60%,
+    #fdf497 90%
+  );
+  -webkit-background-clip: text;
+  /* Also define standard property for compatibility */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+    font-size: 35px; /* change this to change the size*/
+}
